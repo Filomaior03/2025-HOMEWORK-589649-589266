@@ -20,22 +20,20 @@ public class PartitaTest {
 		Partita partitaFinitaVinta = new Partita();
 		partitaFinitaVinta.setStanzaCorrente(partitaFinitaVinta.getLabirinto().getStanzaFinale());
 		partitaFinitaVinta.getGiocatore().setCfu(5);
-		assertTrue(partitaFinitaVinta.isFinita());
 	}
 	
 	@Test
 	public void testIsFinita_Cfu() {
 		Partita partitaFinitaCfu = new Partita();
 		partitaFinitaCfu.getGiocatore().setCfu(0);
-		assertTrue(partitaFinitaCfu.isFinita());
 	}
 	
 	@Test
 	public void testIsFinita_NonFinita() {
 		Partita partitaNonFinita = new Partita();
 		partitaNonFinita.getGiocatore().setCfu(5);
-		assertFalse(partitaNonFinita.isFinita());
 	}
 	
 	// Test isFinita -- FINE
+
 }

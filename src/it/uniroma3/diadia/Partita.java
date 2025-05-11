@@ -50,7 +50,7 @@ public class Partita {
 	 * @return vero se partita vinta
 	 */
 	public boolean vinta() {
-		return this.getStanzaCorrente() == labirinto.getStanzaFinale();
+		return this.getStanzaCorrente()== labirinto.getStanzaFinale();
 	}
 
 	/**
@@ -71,6 +71,10 @@ public class Partita {
 	
 	public Giocatore getGiocatore() {
 		return this.giocatore;
+	}
+
+	public boolean giocatoreIsVivo() {
+		return this.getGiocatore().getCfu() >= 0;
 	}
 
 }

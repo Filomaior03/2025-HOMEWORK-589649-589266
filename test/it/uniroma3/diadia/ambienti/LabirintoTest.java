@@ -34,7 +34,7 @@ public class LabirintoTest {
 	// Test getStanzaFinale -- INIZIO
 	
 	@Test
-	public void testGetStanzaFinale_NotNull() {
+	public void testGetStanzaFinal_NotNull() {
 		Labirinto labirinto = new Labirinto();
 		
 		assertNotNull(labirinto.getStanzaFinale());

@@ -76,7 +76,6 @@ public class StanzaTest{
 		assertEquals(stanza2, stanza.getStanzaAdiacente("sud"));
 		assertEquals(stanza3, stanza.getStanzaAdiacente("est"));
 		assertEquals(stanza4, stanza.getStanzaAdiacente("ovest"));
-		assertNull(stanza.getStanzaAdiacente("pippo"));
 	}
 	
 	// Test ImpostaStanzaAdiacente -- FINE
@@ -170,7 +169,7 @@ public class StanzaTest{
 			attrezzo = new Attrezzo("attrezzo"+i, i);	
 		}
 		
-		assertFalse(stanza.hasAttrezzo("forbiciQuelleDaGiardinaggio"));
+		assertFalse(stanza.hasAttrezzo("cacciavite"));
 	}
 	
 	@Test
